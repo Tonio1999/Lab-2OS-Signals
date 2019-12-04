@@ -15,7 +15,7 @@ int main(int argc, char * argv[])
 {
   signal(SIGINT,sigint_handler); 
   signal(SIGALRM,handler); 
-  while(0) //Keeps running indefinitly
+  while(1) //Keeps running indefinitly
   {
     alarm(1); // Schedule executable to 1 second
     sleep(1);
